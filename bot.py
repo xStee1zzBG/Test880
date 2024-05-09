@@ -8,9 +8,7 @@ from aiogram.filters.command import Command
 
 logging.basicConfig(level=logging.INFO)
 
-TOKEN = os.getenv('6403585791:AAFX12CIj1Kg7NC3Z843_XjwyJ5wSRy8Spw')
-
-bot = Bot(TOKEN)
+bot = Bot("6403585791:AAFX12CIj1Kg7NC3Z843_XjwyJ5wSRy8Spw")
 dp = Dispatcher(bot)
 
 conn = sqlite3.connect('users.db')
