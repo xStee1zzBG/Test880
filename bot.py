@@ -8,7 +8,7 @@ bot = Bot("6403585791:AAFX12CIj1Kg7NC3Z843_XjwyJ5wSRy8Spw")
 dp = Dispatcher()
 
 @dp.message(Command("start"))
-async def cmd_start(message: types.Message):
+async def start(message: types.Message):
     await message.answer("Hello, World!")
 
 async def main():
